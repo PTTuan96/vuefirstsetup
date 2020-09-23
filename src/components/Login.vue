@@ -24,7 +24,7 @@
 		},
 		methods: {
 		 	login: function () {
-		   		this.$store.dispatch('login', this.user)
+		   		this.$store.dispatch('auth/login', this.user)
 		   		.then(() => {
 					   //this.$router.push('/')
 				})
@@ -32,7 +32,7 @@
 			   },
 			
 			getMembers: function(){
-				this.$store.dispatch('getMembers');
+				this.$store.dispatch('auth/getMembers');
 			}
 		}
 	}
